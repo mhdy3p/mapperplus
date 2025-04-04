@@ -39,11 +39,11 @@ MapperPlus have some features and accepts some arguments:
     
 MapperPlus also offers the option to include cookies and custom headers if needed. You can use `-c` to specify a cookie file and `-h` to provide custom headers.
 
-**Example 1:** ```python3 mapperplus.py -u https://www.example.com/ -t example_output_directory -c cookiefile.txt -h "Authorization: Basic YWRtaW46YWRtaW4="```
+**Example 1:** ```python3 mapperplus.py -u https://www.example.com/ -t example_output_directory -c cookiefile.txt -H "Authorization: Basic YWRtaW46YWRtaW4="```
 
  2. In order to download and extract source codes of multiple targets at once, you can use the `-r` with the list of your targets.
 
-**Example 2:** ```python3 mapperplus.py -r targets.txt -t example_output_directory -c cookiefile.txt -h "Authorization: Basic YWRtaW46YWRtaW4="```
+**Example 2:** ```python3 mapperplus.py -r targets.txt -t example_output_directory -c cookiefile.txt -H "Authorization: Basic YWRtaW46YWRtaW4="```
 
 # Some under construction features:
 1. Download Lazy loaded .js files/chunks and look for their .map files too. (This will uncover the hidden parts of a number of websites) - **Security By Obscurity**.
