@@ -130,7 +130,7 @@ const scrapeAndDownloadJSFiles = async (url, cookieFilePath = null) => {
 
     for (let step = 0; step < 10; step++) {
         await page.evaluate('window.scrollBy(0, window.innerHeight)');
-        await page.waitForTimeout(1000);
+        await new Promise(resolve => setTimeout(resolve, 1000));
     }
 
     await browser.close();
